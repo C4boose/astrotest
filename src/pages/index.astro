@@ -1,16 +1,678 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import "../styles/global.css";
 
 ---
+<BaseLayout>
+</BaseLayout>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<body>
+<section id="hero-1426">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper"> Save Our Earth, One Person at a Time</span>
+            <h1 class="cs-title">Let’s Go Green As It Makes Environment</h1>
+            <p class="cs-text">
+                We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
+            </p>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid cs-button1">Join Community</a>
+                <a href="" class="cs-button-solid cs-button2">Donate Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/field-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/field.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/field.jpg" alt="field" width="1920" height="1200" aria-hidden="true">
+    </picture>
+</section>
+</body>    
+
+<body>
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1171">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Work Process</span>
+            <h2 class="cs-title">How To Get Started</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa libero sint hic accusantium exercitationem, voluptatem officia quaerat velit quis ullam?
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lightbulb.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Identify Issues</h3>
+                <p class="cs-item-p">
+                    Extensible for web iterate process before meta services impact with employee engagement strategies.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/puzzle.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Prepare Solution</h3>
+                <p class="cs-item-p">
+                    Extensible for web iterate process before meta services impact with employee engagement strategies.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Working On This</h3>
+                <p class="cs-item-p">
+                    Extensible for web iterate process before meta services impact with employee engagement strategies.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/box.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+                <h3 class="cs-h3">Deliver On Hand</h3>
+                <p class="cs-item-p">
+                    Extensible for web iterate process before meta services impact with employee engagement strategies.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!--Tire Screech-->
+    <img class="cs-graphic" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg" alt="icon" width="840" height="357" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+                                </body>
+
+<style>
+    /*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #steps-1171 {
+        padding: var(--sectionPadding);
+        background-color: #1a1a1a;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+    #steps-1171 .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: 44rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #steps-1171 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #steps-1171 .cs-topper {
+        color: var(--secondary);
+    }
+    #steps-1171 .cs-title,
+    #steps-1171 .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+    #steps-1171 .cs-text {
+        opacity: 0.8;
+    }
+    #steps-1171 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.25rem;
+    }
+    #steps-1171 .cs-item {
+        text-align: center;
+        list-style: none;
+        display: flex;
+        grid-column: span 12;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    #steps-1171 .cs-item:last-of-type:after {
+        display: none;
+    }
+    #steps-1171 .cs-item:nth-of-type(even):after {
+        /* scaleX -1 flips it horizontally */
+        transform: rotate(-135deg) scaleX(-1);
+    }
+    #steps-1171 .cs-item:after {
+        content: "";
+        position: relative;
+        display: block;
+        /* 54px - 84px */
+        width: clamp(3.375rem, 6vw, 5.25rem);
+        height: clamp(3.375rem, 6vw, 5.25rem);
+        margin-top: 1.25rem;
+        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/curved-arrow.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transform: rotate(135deg);
+    }
+    #steps-1171 .cs-picture {
+        margin-bottom: 1.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        border: 1px solid rgba(255, 252, 243, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #steps-1171 .cs-icon {
+        width: 2.5rem;
+        height: auto;
+        display: block;
+    }
+    #steps-1171 .cs-h3 {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        text-align: inherit;
+        margin: 0 0 0.75rem 0;
+        color: var(--bodyTextColorWhite);
+    }
+    #steps-1171 .cs-item-p {
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: inherit;
+        max-width: 21.375rem;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+        opacity: 0.8;
+    }
+    #steps-1171 .cs-graphic {
+        width: 52.5rem;
+        height: auto;
+        opacity: 0.05;
+        position: absolute;
+        top: -5rem;
+        left: -5rem;
+        transform: rotate(-10deg);
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #steps-1171 .cs-item {
+        grid-column: span 6;
+    }
+    #steps-1171 .cs-item:nth-of-type(2):after {
+        display: none;
+    }
+    #steps-1171 .cs-item:nth-of-type(1):after {
+        transform: rotate(135deg) scaleX(-1);
+    }
+    #steps-1171 .cs-item:after {
+        margin: 0;
+        position: absolute;
+        right: -2.5rem;
+        top: 0;
+        transform: rotate(45deg);
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #steps-1171 .cs-container {
+        max-width: 80rem;
+    }
+    #steps-1171 .cs-item {
+        grid-column: span 3;
+    }
+    #steps-1171 .cs-item:nth-of-type(2):after {
+        display: block;
+        transform: rotate(45deg);
+    }
+    #steps-1171 .cs-item:nth-of-type(3):after {
+        display: block;
+        transform: rotate(135deg) scaleX(-1);
+    }
+    #steps-1171 .cs-item:after {
+        right: -3rem;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #steps-1171 {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+                                
+</style>
+
+
+
+<style>
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1426 {
+    /* Centers button */
+    text-align: center;
+    /* 200px - 300px - leaving extra space for the navigation */
+    padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1426 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-1426 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.48;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+  }
+  #hero-1426 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #hero-1426 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  #hero-1426 .cs-content {
+    width: 100%;
+    max-width: 39.375rem;
+  }
+  #hero-1426 .cs-topper {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    display: inline-block;
+    position: relative;
+  }
+  #hero-1426 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: center;
+    max-width: 51.8125rem;
+    color: #fff;
+    position: relative;
+  }
+  #hero-1426 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.95vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: center;
+    width: 100%;
+    /* 464px - 622px */
+    max-width: clamp(29rem, 60vw, 38.785rem);
+    margin: 0 auto 0;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  #hero-1426 .cs-button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  #hero-1426 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #1a1a1a;
+    min-width: 12.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #hero-1426 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #hero-1426 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #hero-1426 .cs-button1 {
+    background-color: var(--secondary);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-1426 .cs-background:before {
+    opacity: 0.72;
+  }
+}
+                                
+</style>
+
+<!-- ============================================ -->
+<!--                    Team                      -->
+<!-- ============================================ -->
+<body>
+<section id="meet-team-2071">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Team</span>
+            <h2 class="cs-title">Meet Our Team</h2>
+            <p class="cs-text">
+                Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-name">Dr. Ronald Richards</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Cameron Williamson</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Brooklyn Simmons</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Savannah Nguyen</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Albert Flores</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Eleanor Pena</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Dianne Russell</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-name">Dr. Darlene Robertson</span>
+                <div class="cs-flex">
+                    <span class="cs-job">Dental Surgeon</span>
+                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg" alt="dentist staff" width="1024" height="894">
+    </picture>
+</section>
+</body>                               
+<style>
+/*-- -------------------------- -->
+<!--            Team            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #meet-team-2071 {
+    /* 240px - 480px top */
+    /* 60px - 100px bottom */
+    /* 16px left & right */
+    padding: clamp(15rem, 30vw, 30rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    background-color: #FAF6F2;
+    overflow: hidden;
+    position: relative;
+  }
+  #meet-team-2071:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.06%, #FFF 20.29%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #meet-team-2071 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #meet-team-2071 .cs-content {
+    text-align: center;
+    width: 100%;
+    max-width: 59rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #meet-team-2071 .cs-text {
+    max-width: none;
+  }
+  #meet-team-2071 .cs-card-group {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 2.5rem;
+    position: relative;
+  }
+  #meet-team-2071 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: span 12;
+    gap: 1rem;
+  }
+  #meet-team-2071 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #meet-team-2071 .cs-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  #meet-team-2071 .cs-job {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #meet-team-2071 .cs-department {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #meet-team-2071 .cs-background {
+    width: 100%;
+    height: clamp(20%, 80vw, 100%);
+    min-height: 26.25rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #meet-team-2071 .cs-background img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    /* makes image act as a background image */
+    object-fit: cover;
+    object-position: bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #meet-team-2071:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, #FFF 45.39%);
+  }
+  #meet-team-2071 .cs-card-group {
+    gap: 2.5rem 5rem;
+  }
+  #meet-team-2071 .cs-item {
+    text-align: left;
+    align-items: flex-start;
+    grid-column: span 6;
+  }
+  #meet-team-2071 .cs-flex {
+    align-items: flex-start;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #meet-team-2071:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, rgba(255, 255, 255, 0.92) 59.51%);
+  }
+  #meet-team-2071 .cs-container {
+    max-width: 80rem;
+  }
+  #meet-team-2071 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #meet-team-2071 .cs-item {
+    grid-column: span 3;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #meet-team-2071:before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, var(--dark) 59.51%);
+  }
+  body.dark-mode #meet-team-2071 .cs-title,
+  body.dark-mode #meet-team-2071 .cs-text,
+  body.dark-mode #meet-team-2071 .cs-name,
+  body.dark-mode #meet-team-2071 .cs-job,
+  body.dark-mode #meet-team-2071 .cs-department {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #meet-team-2071 .cs-text,
+  body.dark-mode #meet-team-2071 .cs-department {
+    opacity: 0.8;
+  }
+}
+                                
+
+</style>
