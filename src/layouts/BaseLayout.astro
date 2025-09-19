@@ -1,9 +1,11 @@
 ---
 import "../components/corestyles.css";
 
-import Nav from "../components/Nav.astro";
+import Header from "../components/Header.astro";
 
 import Footer from "../components/Footer.astro";
+
+/// import Nav from "../components/Nav.astro";
 
 ---
 
@@ -13,10 +15,11 @@ import Footer from "../components/Footer.astro";
         <link rel="icon" type="image/svg+xml" href="/siteicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Site Builder</title>
+        <title>OnParDesigns</title>
     </head>
     <body>
-        <Nav />
+        <Header />
+        <!--- <Nav />-->
         <slot />
     </body>
 
