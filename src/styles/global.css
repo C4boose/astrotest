@@ -9,3 +9,7 @@
 #meet-team-2071 {
   margin-bottom: 2rem; /* Optional if you want space after this section */
 }
+
+html, body {
+  overflow-x: hidden;
+}
