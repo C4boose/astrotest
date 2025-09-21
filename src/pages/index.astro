@@ -24,7 +24,7 @@ import Footer from "../components/Footer.astro"
                 <a href="" class="cs-button-solid cs-button2">Contact Us</a>
                  <div class="cs-button-group">
                 <!--a href="" class="cs-button-solid cs-button1">Join Community</a-->
-                <a href="/web-design" class="cs-button-solid cs-button2">About Us</a>
+                <a href="/web-design" class="cs-button-solid cs-button2 about-gradient">About Us</a>
             </div>
             </div>
           </div>
@@ -160,7 +160,7 @@ import Footer from "../components/Footer.astro"
         color: #1a1a1a;
         min-width: 12.5rem;
         padding: 0 1.5rem;
-        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+        background: linear-gradient(315deg, #C8B91C, #48B6D9);
         border-radius: 0.5rem;
         display: inline-block;
         position: relative;
@@ -173,8 +173,8 @@ import Footer from "../components/Footer.astro"
         position: absolute;
         height: 100%;
         width: 0%;
-        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-        opacity: 0.2;
+        background: linear-gradient(315deg, #05B49C, #55AD45); 
+        opacity: 0.9;
         top: 0;
         left: 0;
         z-index: -1;
@@ -193,6 +193,16 @@ import Footer from "../components/Footer.astro"
       body.dark-mode #hero-1426 .cs-background:before {
         opacity: 0.72;
       }
+    }
+
+    /* Custom gradient for About Us button */
+    #hero-1426 .about-gradient {
+      background: linear-gradient(315deg, #05B49C, #55AD45); 
+      color: #000000;
+    }
+    #hero-1426 .about-gradient:before {
+      background: linear-gradient(315deg, #C8B91C, #48B6D9);
+      opacity: 0.9;
     }
                                     
     </style>
@@ -431,6 +441,115 @@ import Footer from "../components/Footer.astro"
 </style>
 
                               
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-697">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Have Doubts? Get Your Queries Solved by Our Experts</h2>
+            <a href="" class="cs-button-solid">Get In Touch</a>
+        </div>
+    </div>
+    <!--SVG Waves Background-->
+    <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+                                
+
+<style>
+    /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-697 {
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+    position: relative;
+    z-index: 1;
+  }
+  #cta-697 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-697 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-697 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-697 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: #FF8C00;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cta-697 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #cta-697 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #cta-697 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* makes it act like a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cta-697 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+                                
+</style>
 
 
 <!-- ============================================ -->
@@ -840,6 +959,8 @@ import Footer from "../components/Footer.astro"
 }
                                 
 </style>
+
+
 
 
 <!-- ============================================ -->
