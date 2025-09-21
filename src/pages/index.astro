@@ -10,56 +10,129 @@ import Footer from "../components/Footer.astro"
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
-<body>
-<section id="hero-1426">
+
+<section id="hero-143">
     <div class="cs-container">
-        <div class="cs-content">
-            <!--span class="cs-topper">At OnParDesign, we turn complex ideas into immersive digital solutions</span!-->
-            <h1 class="cs-title">At OnParDesign, we turn complex ideas into immersive digital solutions</h1>
-            <!--p class="cs-text">
-                We help companies develop powerful corporate social responsibility, grantmaking, and employee engagement strategies.
-            </p!-->
-            <div class="cs-button-group">
-                <!--a href="" class="cs-button-solid cs-button1">Join Community</a-->
-                <a href="" class="cs-button-solid cs-button2">Contact Us</a>
-                 <div class="cs-button-group">
-                <!--a href="" class="cs-button-solid cs-button1">Join Community</a-->
-                <a href="/web-design" class="cs-button-solid cs-button2 about-gradient">About Us</a>
-            </div>
-            </div>
-          </div>
-          <div><h3 class="cs-text">No page builders or WordPress. We offer 100% hand-coded websites with superior results starting at $125/mo as well as Google Ads and SEO services.</h3></div>
-      </div>
-  
-      <!-- Background Image -->
+        <h1 class="cs-title">We turn complex ideas into immersive digital solutions</h1>
+        <p class="cs-text">
+            No page builders or WordPress. We offer 100% hand-coded websites with superior results starting at $125/mo as well as Google Ads and SEO services.
+        </p>
+        <a href="" class="cs-button-solid">Request Appointment</a>
+    </div>
+
+    <!-- Background Image -->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237342/herosplash-m_evqyj5.webp">
+        <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp">
         <source media="(min-width: 601px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp">
-        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp" alt="field" width="1920" height="1200" aria-hidden="true">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp" alt="kitchen" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
-</body>    
 
-<body>
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
 
-  <style>
-    /*-- -------------------------- -->
-    <---           Hero             -->
-    <--- -------------------------- -*/
-    
-    /* Mobile - 360px */
-    @media only screen and (min-width: 0rem) {
-      #hero-1426 {
+<section id="h-services-143">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758414839/coding-svgrepo-com_1_rbytt8.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Design & Development</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758414701/seo-3-svgrepo-com_sdutz7.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">SEO</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758414984/support-svgrepo-com_1_rqo4fp.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Support</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758415030/gear-svgrepo-com_kg3pma.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Site Maintenance</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+    </ul>
+</section>
+                                
+
+
+
+
+
+
+
+<style>
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-143 {
         /* Centers button */
         text-align: center;
-        /* 200px - 300px - leaving extra space for the navigation */
-        padding: clamp(12.5rem, 25.95vw, 18.75em) 1rem;
-        /* prevents the topper line from causing an overflow */
-        overflow: hidden;
+        /* 144px - 300px - leaving extra space for the navigation */
+        padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+        /* 130px - 450px */
+        padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
         position: relative;
         z-index: 1;
-      }
-      #hero-1426 .cs-background {
+        /* Prevents white rectangle pseudos from overlapping the sections below */
+        overflow: hidden;
+    }
+    #hero-143:before {
+        /* Left side of the triangle */
+        content: "";
+        width: 31.25rem;
+        /* make really long so it covers the whole screen all the way to desktop */
+        height: 250rem;
+        background: #fff;
+        opacity: 1;
+        transform: rotate(-67deg);
+        transform-origin: center;
+        position: absolute;
+        display: block;
+        bottom: -139.6875rem;
+        /* this makes the right edge sit at the 50% line at all times */
+        right: 50%;
+        z-index: 0;
+    }
+    #hero-143:after {
+        /* Right side of the triangle */
+        content: "";
+        width: 31.25rem;
+        height: 250rem;
+        background: #fff;
+        opacity: 1;
+        transform: rotate(67deg);
+        transform-origin: center;
+        position: absolute;
+        display: block;
+        bottom: -139.6875rem;
+        /* this makes the left edge sit at the 50% line at all times */
+        left: 50%;
+        z-index: 0;
+    }
+    #hero-143 .cs-background {
         width: 100%;
         height: 100%;
         display: block;
@@ -67,14 +140,14 @@ import Footer from "../components/Footer.astro"
         top: 0;
         left: 0;
         z-index: -2;
-      }
-      #hero-1426 .cs-background:before {
+    }
+    #hero-143 .cs-background:before {
         /* Overlay */
         content: "";
         width: 100%;
         height: 100%;
         background: #000;
-        opacity: 0.48;
+        opacity: 0.7;
         position: absolute;
         display: block;
         top: 0;
@@ -82,363 +155,402 @@ import Footer from "../components/Footer.astro"
         z-index: 1;
         /* prevents the cursor from interacting with it */
         pointer-events: none;
-      }
-      #hero-1426 .cs-background img {
+    }
+    #hero-143 .cs-background img {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
         object-fit: cover;
-      }
-      #hero-1426 .cs-container {
+    }
+    #hero-143 .cs-container {
         width: 100%;
         max-width: 80rem;
         margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-      }
-      #hero-1426 .cs-content {
-        width: 100%;
-        max-width: 39.375rem;
-      }
-      #hero-1426 .cs-topper {
-        /* 13px - 16px */
-        font-size: clamp(0.8125rem, 1.5vw, 1rem);
-        line-height: 1.2em;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        color: var(--secondary);
-        display: inline-block;
-        position: relative;
-      }
-      #hero-1426 .cs-title {
+    }
+    #hero-143 .cs-title {
         /* 39px - 61px */
         font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
         font-weight: 700;
         line-height: 1.2em;
         text-align: center;
         max-width: 51.8125rem;
-        background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-        -webkit-background-clip: text;
-        color: transparent;
-        display: inline-block;
+        /* 16px - 24px */
+        margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+        color: #fff;
         position: relative;
-      }
-      #hero-1426 .cs-text {
-        /* 16px - 20px */
-        font-size: clamp(1rem, 1.95vw, 1.25rem);
+    }
+    #hero-143 .cs-title:after {
+        /* Divider Line */
+        content: "";
+        /* 60px - 100px */
+        width: clamp(3.75rem, 9.5vw, 6.25rem);
+        /* 4px - 8px */
+        height: clamp(0.25rem, 0.8vw, 0.5rem);
+        /* 16px - 24px */
+        margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+        background: var(--primary);
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    #hero-143 .cs-text {
+        /* 16px - 25px */
+        font-size: clamp(1rem, 1.95vw, 1.5625rem);
         line-height: 1.5em;
         text-align: center;
         width: 100%;
-        /* 464px - 622px */
-        max-width: clamp(29rem, 60vw, 38.785rem);
-        margin: 0 auto 0;
-        margin-bottom: 2rem;
+        /* 464px - 800px */
+        max-width: clamp(29rem, 60vw, 50rem);
+        margin: 0 auto;
+        /* 40px - 48px */
+        margin-bottom: clamp(2.5rem, 4vw, 3rem);
         color: #fff;
-      }
-      #hero-1426 .cs-button-group {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
-      #hero-1426 .cs-button-solid {
+    }
+    #hero-143 .cs-button-solid {
         font-size: 1rem;
         /* 46px - 56px */
         line-height: clamp(2.875rem, 5.5vw, 3.5rem);
         text-decoration: none;
         font-weight: 700;
-        text-align: center;
-        margin: 0;
+        margin: auto;
         color: #1a1a1a;
-        min-width: 12.5rem;
+        min-width: 9.375rem;
         padding: 0 1.5rem;
-        background: linear-gradient(315deg, #C8B91C, #48B6D9);
-        border-radius: 0.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
         display: inline-block;
         position: relative;
         z-index: 1;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-      }
-      #hero-1426 .cs-button-solid:before {
+        transition: color 0.3s;
+    }
+    #hero-143 .cs-button-solid:before {
         content: "";
         position: absolute;
         height: 100%;
         width: 0%;
-        background: linear-gradient(315deg, #05B49C, #55AD45); 
-        opacity: 0.9;
+        background: #000;
+        opacity: 1;
         top: 0;
         left: 0;
         z-index: -1;
         border-radius: 0.25rem;
         transition: width 0.3s;
-      }
-      #hero-1426 .cs-button-solid:hover:before {
+    }
+    #hero-143 .cs-button-solid:hover {
+        color: #fff;
+    }
+    #hero-143 .cs-button-solid:hover:before {
         width: 100%;
-      }
-      #hero-1426 .cs-button1 {
-        background-color: var(--secondary);
-      }
     }
-    /* Dark Mode */
-    @media only screen and (min-width: 0rem) {
-      body.dark-mode #hero-1426 .cs-background:before {
-        opacity: 0.72;
-      }
+}
+/* Desktop - 1300px (To make image background parallax) */
+@media only screen and (min-width: 81.25rem) {
+    #hero-143 {
+        background: url("https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* makes the parallax effect */
+        background-attachment: fixed;
     }
+    #hero-143 .cs-background img {
+        display: none;
+    }
+}
 
-    /* Custom gradient for About Us button */
-    #hero-1426 .about-gradient {
-      background: linear-gradient(315deg, #05B49C, #55AD45); 
-      color: #000000;
+/*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #h-services-143 {
+        /* 40px - 100px */
+        padding: 0 1em clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
+        position: relative;
+        /* give a higher z index than the hero so it can sit on top */
+        z-index: 10;
     }
-    #hero-1426 .about-gradient:before {
-      background: linear-gradient(315deg, #C8B91C, #48B6D9);
-      opacity: 0.9;
+    #h-services-143 .cs-card-group {
+        width: 100%;
+        max-width: 29.0625rem;
+        margin: 0 auto 0;
+        /* negative margin pulls it up on top of the hero section */
+        /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
+            to make the value negative since clamp doesn't work with negative values */
+        margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
+        /* 40px - 60px top and bottom, 16px - 44px left & right */
+        padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
+        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 0.3125rem;
+        border-top: 8px solid var(--primary);
+        background-color: #fff;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
     }
-                                    
-    </style>
+    #h-services-143 .cs-item {
+        list-style: none;
+        margin: 0 auto 2rem;
+        width: 100%;
+        max-width: 22.5rem;
+    }
+    #h-services-143 .cs-item:last-of-type {
+        margin-bottom: 0;
+    }
+    #h-services-143 .cs-icon {
+        /* 68px - 88px */
+        width: clamp(4.25rem, 8.8vw, 5.5rem);
+        /* 68px - 88px */
+        height: clamp(4.25rem, 8.8vw, 5.5rem);
+        margin: auto;
+        /* 20px - 24px */
+        margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #h-services-143 .cs-icon img {
+        /* 44px - 52px */
+        width: clamp(2.75rem, 5.8vw, 3.25rem);
+        height: auto;
+    }
+    #h-services-143 .cs-title {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto 0.5rem;
+        color: var(--headerColor);
+    }
+    #h-services-143 .cs-text {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5em;
+        max-width: 22.5rem;
+        margin: 0 auto;
+        color: var(--bodyTextColor);
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #h-services-143 .cs-card-group {
+        max-width: 49rem;
+        /* -76px to -320px - we're calculating whatever clamp is and multiplying by -1
+               to make the value negative since clamp doesn't work with negative values */
+        margin-top: calc(clamp(4.75rem, 20vw, 20rem) * -1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2.5rem;
+    }
+    #h-services-143 .cs-item {
+        width: 45%;
+        max-width: 19.625rem;
+    }
+    #h-services-143 .cs-item:last-of-type {
+        margin-bottom: 2rem;
+    }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #h-services-143 .cs-card-group {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+    }
+    #h-services-143 .cs-item {
+        margin: 0;
+    }
+    #h-services-143 .cs-item:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+                                
+</style>
 <!-- ============================================ -->
 <!--                   Steps                      -->
 <!-- ============================================ -->
 
-<section id="steps-1171">
+<section id="steps-1675">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Our Work Process</span>
+            <span class="cs-topper">Our Steps</span>
             <h2 class="cs-title">How To Get Started</h2>
             <p class="cs-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa libero sint hic accusantium exercitationem, voluptatem officia quaerat velit quis ullam?
+                Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and semi-permanent coverage.
             </p>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lightbulb.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-                <h3 class="cs-h3">Discovery</h3>
-                <p class="cs-item-p">
-                    We don't just build websites; we engineer digital solutions. This begins with our meticulous Discovery Phase. A critical, in-depth collaboration designed to thoroughly understand your business, its complexities, and its unique position.
+                <span class="cs-number">01</span>
+                <h3 class="cs-h3">Consultation</h3>
+                <p class="cs-item-text">
+                    We don't just build websites, we engineer digital solutions. This begins with our meticulous Discovery Phase. A critical, in-depth collaboration designed to thoroughly understand your business, its complexities, and its unique position
                 </p>
             </li>
             <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/puzzle.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
+                <span class="cs-number">02</span>
                 <h3 class="cs-h3">Planning</h3>
-                <p class="cs-item-p">
+                <p class="cs-item-text">
                     Our planning phase transforms vision into a meticulously engineered digital roadmap. This is where we outline your entire web design and development project, establish concrete milestones, and set clear, actionable priorities. Our strategic plan ensures your new website design not only aligns perfectly with your long-term vision but also actively supports your specific digital marketing and complex business objective
                 </p>
             </li>
             <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gear.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
+                <span class="cs-number">03</span>
                 <h3 class="cs-h3">Execution</h3>
-                <p class="cs-item-p">
-                    Our execution phase brings your vision to life, transforming strategic concepts into a tangible, high-performing digital asset. This is where our expert web design and development teams work in synergy, carefully crafting visual concepts and refining digital assets to not only meet your technology requirements but also align seamlessly with your marketing goals.
+                <p class="cs-item-text">
+                  Our execution phase brings your vision to life, transforming strategic concepts into a tangible, high-performing digital asset. This is where our expert web design and development teams work in synergy, carefully crafting visual concepts and refining digital assets to not only meet your technology requirements but also align seamlessly with your marketing goals.  
                 </p>
             </li>
             <li class="cs-item">
-                <picture class="cs-picture">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/box.svg" alt="icon" width="40" height="40" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
+                <span class="cs-number">04</span>
                 <h3 class="cs-h3">Delivery</h3>
-                <p class="cs-item-p">
-                    The delivery phase marks the culmination of our meticulous planning and expert execution. This is where your new, high-performance website transitions from development to deployment, ready to make a significant impact on your target audience.
+                <p class="cs-item-text">
+                   The delivery phase marks the culmination of our meticulous planning and expert execution. This is where your new, high-performance website transitions from development to deployment, ready to make a significant impact on your target audience. 
                 </p>
             </li>
         </ul>
     </div>
-    <!--Tire Screech-->
-    <img class="cs-graphic" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758305043/laptop-2620118_1280_khcm0m.webp" alt="icon" width="840" height="357" loading="lazy" decoding="async" aria-hidden="true">
 </section>
+                                
 
-<style>
-  /*-- -------------------------- -->
+<style>/*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps-1171 {
-      padding: var(--sectionPadding);
-      background-color: #1a1a1a;
-      overflow: hidden;
-      position: relative;
-      z-index: 1;
+  #steps-1675 {
+    padding: var(--sectionPadding);
+    padding-left: 0;
+    padding-right: 0;
   }
-  #steps-1171 .cs-container {
-      width: 100%;
-      /* changes to 1280px at desktop */
-      max-width: 44rem;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* 48px - 64px */
-      gap: clamp(3rem, 6vw, 4rem);
+  #steps-1675 .cs-container {
+    width: 100%;
+    /* changes to 1920px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  #steps-1171 .cs-content {
-      /* set text align to left if content needs to be left aligned */
-      text-align: center;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
-      align-items: center;
+  #steps-1675 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
   }
-
-  #steps-1171 .cs-topper {
-        background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-        -webkit-background-clip: text;
-        color: transparent;
-        display: inline-block;
-        position: relative;
-      
+  #steps-1675 .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    max-width: 32.625rem;
   }
-  #steps-1171 .cs-title,
-  #steps-1171 .cs-text {
-      color: var(--bodyTextColorWhite);
+  #steps-1675 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    align-items: stretch;
+    grid-auto-flow: row;
   }
-  #steps-1171 .cs-text {
-      opacity: 0.8;
+  #steps-1675 .cs-item {
+    list-style: none;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    /* bottom border */
   }
-  #steps-1171 .cs-card-group {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 1.25rem;
+  #steps-1675 .cs-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    /* to change the color of the bottom border, adjust the second color (at 50%). the first and third will blend the color to transparent */
+    /* note you'll also have to change the color in the tablet media query when the lines go vertical */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: .6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-  #steps-1171 .cs-item {
-      text-align: center;
-      list-style: none;
-      display: flex;
-      grid-column: span 12;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
+  #steps-1675 .cs-item:first-of-type {
+    padding-top: 0;
   }
-  #steps-1171 .cs-item:last-of-type:after {
-      display: none;
+  #steps-1675 .cs-item:last-of-type {
+    padding-bottom: 0;
   }
-  #steps-1171 .cs-item:nth-of-type(even):after {
-      /* scaleX -1 flips it horizontally */
-      transform: rotate(-135deg) scaleX(-1);
+  #steps-1675 .cs-item:last-of-type::after {
+    content: none;
   }
-  #steps-1171 .cs-item:after {
-      content: "";
-      position: relative;
-      display: block;
-      /* 54px - 84px */
-      width: clamp(3.375rem, 6vw, 5.25rem);
-      height: clamp(3.375rem, 6vw, 5.25rem);
-      margin-top: 1.25rem;
-      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/curved-arrow.svg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      opacity: 1;
-      transform: rotate(135deg);
+  #steps-1675 .cs-number {
+    /* 80px - 100px */
+    font-size: clamp(5rem, 1vw, 6.25rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--primary);
+    opacity: 0.12;
+    display: block;
   }
-  #steps-1171 .cs-picture {
-      margin-bottom: 1.5rem;
-      width: 5.5rem;
-      height: 5.5rem;
-      border: 1px solid rgba(255, 252, 243, 0.5);
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  #steps-1675 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: -1.9375rem 0 1rem 0;
+    color: var(--headerColor);
   }
-  #steps-1171 .cs-icon {
-      width: 2.5rem;
-      height: auto;
-      display: block;
-  }
-  #steps-1171 .cs-h3 {
-      font-size: 1.25rem;
-      line-height: 1.2em;
-      text-align: inherit;
-      margin: 0 0 0.75rem 0;
-      color: var(--bodyTextColorWhite);
-  }
-  #steps-1171 .cs-item-p {
-      font-size: 1rem;
-      line-height: 1.5em;
-      text-align: inherit;
-      max-width: 21.375rem;
-      margin: 0;
-      color: var(--bodyTextColorWhite);
-      opacity: 0.8;
-  }
-  #steps-1171 .cs-graphic {
-      width: 52.5rem;
-      height: auto;
-      opacity: 0.05;
-      position: absolute;
-      top: -5rem;
-      left: -5rem;
-      transform: rotate(-10deg);
+  #steps-1675 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #steps-1171 .cs-item {
-      grid-column: span 6;
+  #steps-1675 .cs-container {
+    max-width: 120rem;
   }
-  #steps-1171 .cs-item:nth-of-type(2):after {
-      display: none;
+  #steps-1675 .cs-card-group {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
   }
-  #steps-1171 .cs-item:nth-of-type(1):after {
-      transform: rotate(135deg) scaleX(-1);
+  #steps-1675 .cs-item {
+    /* 24px - 60px */
+    padding: clamp(1.5rem, 3vw, 3.75rem);
+    /* the specificity of the mobile .cs-item means we need to explicitly define the first and last items here, too */
   }
-  #steps-1171 .cs-item:after {
-      margin: 0;
-      position: absolute;
-      right: -2.5rem;
-      top: 0;
-      transform: rotate(45deg);
+  #steps-1675 .cs-item::after {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: .6;
+    right: 0;
+    left: initial;
   }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #steps-1171 .cs-container {
-      max-width: 80rem;
-  }
-  #steps-1171 .cs-item {
-      grid-column: span 3;
-  }
-  #steps-1171 .cs-item:nth-of-type(2):after {
-      display: block;
-      transform: rotate(45deg);
-  }
-  #steps-1171 .cs-item:nth-of-type(3):after {
-      display: block;
-      transform: rotate(135deg) scaleX(-1);
-  }
-  #steps-1171 .cs-item:after {
-      right: -3rem;
+  #steps-1675 .cs-item:first-of-type,
+  #steps-1675 .cs-item:last-of-type {
+    /* 24px - 60px */
+    padding: clamp(1.5rem, 3vw, 3.75rem);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #steps-1171 {
-      background-color: rgba(0, 0, 0, 0.6);
-  }
-}
-                              
-</style>
+                                </style>
+
 
                               
 <!-- ============================================ -->
@@ -448,7 +560,7 @@ import Footer from "../components/Footer.astro"
 <section id="cta-697">
     <div class="cs-container">
         <div class="cs-content">
-            <h2 class="cs-title">Have Doubts? Get Your Queries Solved by Our Experts</h2>
+            <h2 class="cs-title">Have Questions? Get In Touch With One Of Our Experts</h2>
             <a href="" class="cs-button-solid">Get In Touch</a>
         </div>
     </div>
@@ -1283,270 +1395,11 @@ import Footer from "../components/Footer.astro"
                                 </script>
 
 
-
-
-<!-- ============================================ -->
-<!--                    Team                      -->
-<!-- ============================================ -->
 <body>
-<section id="meet-team-2071">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Team</span>
-            <h2 class="cs-title">Meet Our Team</h2>
-            <p class="cs-text">
-                Orci eu lobortis elementum nibh tellus. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <span class="cs-name">Dr. Ronald Richards</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Cameron Williamson</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Brooklyn Simmons</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Savannah Nguyen</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Albert Flores</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Eleanor Pena</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Dianne Russell</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-            <li class="cs-item">
-                <span class="cs-name">Dr. Darlene Robertson</span>
-                <div class="cs-flex">
-                    <span class="cs-job">Dental Surgeon</span>
-                    <span class="cs-department">Cosmetic and Aesthetic Dentistry</span>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dentist-staff.jpeg" alt="dentist staff" width="1024" height="894">
-    </picture>
-</section>
-</body>
-<body>
-  <footer>
     <Footer />
-  </footer>
-</body>                 
-<style>
-/*-- -------------------------- -->
-<!--            Team            -->
-<--- -------------------------- -*/
+</body>
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #meet-team-2071 {
-    /* 240px - 480px top */
-    /* 60px - 100px bottom */
-    /* 16px left & right */
-    padding: clamp(15rem, 30vw, 30rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-    background-color: #FAF6F2;
-    overflow: hidden;
-    position: relative;
-  }
-  #meet-team-2071:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 3.06%, #FFF 20.29%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #meet-team-2071 .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 44rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-    position: relative;
-    z-index: 1;
-  }
-  #meet-team-2071 .cs-content {
-    text-align: center;
-    width: 100%;
-    max-width: 59rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #meet-team-2071 .cs-text {
-    max-width: none;
-  }
-  #meet-team-2071 .cs-card-group {
-    width: 100%;
-    max-width: 80rem;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    row-gap: 2.5rem;
-    position: relative;
-  }
-  #meet-team-2071 .cs-item {
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    grid-column: span 12;
-    gap: 1rem;
-  }
-  #meet-team-2071 .cs-name {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0;
-    color: var(--headerColor);
-  }
-  #meet-team-2071 .cs-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.25rem;
-  }
-  #meet-team-2071 .cs-job {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #meet-team-2071 .cs-department {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5em;
-    text-align: inherit;
-    margin: 0;
-    color: var(--bodyTextColor);
-  }
-  #meet-team-2071 .cs-background {
-    width: 100%;
-    height: clamp(20%, 80vw, 100%);
-    min-height: 26.25rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #meet-team-2071 .cs-background img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    /* makes image act as a background image */
-    object-fit: cover;
-    object-position: bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #meet-team-2071:before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, #FFF 45.39%);
-  }
-  #meet-team-2071 .cs-card-group {
-    gap: 2.5rem 5rem;
-  }
-  #meet-team-2071 .cs-item {
-    text-align: left;
-    align-items: flex-start;
-    grid-column: span 6;
-  }
-  #meet-team-2071 .cs-flex {
-    align-items: flex-start;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #meet-team-2071:before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, rgba(255, 255, 255, 0.92) 59.51%);
-  }
-  #meet-team-2071 .cs-container {
-    max-width: 80rem;
-  }
-  #meet-team-2071 .cs-item {
-    grid-column: span 4;
-  }
-}
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #meet-team-2071 .cs-item {
-    grid-column: span 3;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #meet-team-2071:before {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 19.7%, var(--dark) 59.51%);
-  }
-  body.dark-mode #meet-team-2071 .cs-title,
-  body.dark-mode #meet-team-2071 .cs-text,
-  body.dark-mode #meet-team-2071 .cs-name,
-  body.dark-mode #meet-team-2071 .cs-job,
-  body.dark-mode #meet-team-2071 .cs-department {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #meet-team-2071 .cs-text,
-  body.dark-mode #meet-team-2071 .cs-department {
-    opacity: 0.8;
-  }
-}
-                                
 
-</style>
 
 
 

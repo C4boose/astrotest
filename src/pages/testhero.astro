@@ -1,0 +1,572 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Footer from "../components/Footer.astro"
+---
+<BaseLayout>
+</BaseLayout>
+
+
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-143">
+    <div class="cs-container">
+        <h1 class="cs-title">We turn complex ideas into immersive digital solutions</h1>
+        <p class="cs-text">
+            No page builders or WordPress. We offer 100% hand-coded websites with superior results starting at $125/mo as well as Google Ads and SEO services.
+        </p>
+        <a href="" class="cs-button-solid">Request Appointment</a>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp">
+        <source media="(min-width: 601px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp" alt="kitchen" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="h-services-143">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758414839/coding-svgrepo-com_1_rbytt8.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Design & Development</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758414701/seo-3-svgrepo-com_sdutz7.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">SEO</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758414984/support-svgrepo-com_1_rqo4fp.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Support</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758415030/gear-svgrepo-com_kg3pma.svg" alt="icon" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Site Maintenance</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+        </li>
+    </ul>
+</section>
+                                
+
+
+
+
+
+
+
+<style>
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-143 {
+        /* Centers button */
+        text-align: center;
+        /* 144px - 300px - leaving extra space for the navigation */
+        padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+        /* 130px - 450px */
+        padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
+        position: relative;
+        z-index: 1;
+        /* Prevents white rectangle pseudos from overlapping the sections below */
+        overflow: hidden;
+    }
+    #hero-143:before {
+        /* Left side of the triangle */
+        content: "";
+        width: 31.25rem;
+        /* make really long so it covers the whole screen all the way to desktop */
+        height: 250rem;
+        background: #fff;
+        opacity: 1;
+        transform: rotate(-67deg);
+        transform-origin: center;
+        position: absolute;
+        display: block;
+        bottom: -139.6875rem;
+        /* this makes the right edge sit at the 50% line at all times */
+        right: 50%;
+        z-index: 0;
+    }
+    #hero-143:after {
+        /* Right side of the triangle */
+        content: "";
+        width: 31.25rem;
+        height: 250rem;
+        background: #fff;
+        opacity: 1;
+        transform: rotate(67deg);
+        transform-origin: center;
+        position: absolute;
+        display: block;
+        bottom: -139.6875rem;
+        /* this makes the left edge sit at the 50% line at all times */
+        left: 50%;
+        z-index: 0;
+    }
+    #hero-143 .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    #hero-143 .cs-background:before {
+        /* Overlay */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+    }
+    #hero-143 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #hero-143 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+    }
+    #hero-143 .cs-title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 51.8125rem;
+        /* 16px - 24px */
+        margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+        color: #fff;
+        position: relative;
+    }
+    #hero-143 .cs-title:after {
+        /* Divider Line */
+        content: "";
+        /* 60px - 100px */
+        width: clamp(3.75rem, 9.5vw, 6.25rem);
+        /* 4px - 8px */
+        height: clamp(0.25rem, 0.8vw, 0.5rem);
+        /* 16px - 24px */
+        margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+        background: var(--primary);
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    #hero-143 .cs-text {
+        /* 16px - 25px */
+        font-size: clamp(1rem, 1.95vw, 1.5625rem);
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        /* 464px - 800px */
+        max-width: clamp(29rem, 60vw, 50rem);
+        margin: 0 auto;
+        /* 40px - 48px */
+        margin-bottom: clamp(2.5rem, 4vw, 3rem);
+        color: #fff;
+    }
+    #hero-143 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        margin: auto;
+        color: #1a1a1a;
+        min-width: 9.375rem;
+        padding: 0 1.5rem;
+        background-color: var(--primary);
+        border-radius: 0.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+    }
+    #hero-143 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 0.25rem;
+        transition: width 0.3s;
+    }
+    #hero-143 .cs-button-solid:hover {
+        color: #fff;
+    }
+    #hero-143 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+}
+/* Desktop - 1300px (To make image background parallax) */
+@media only screen and (min-width: 81.25rem) {
+    #hero-143 {
+        background: url("https://res.cloudinary.com/dob3ivf6b/image/upload/v1746237343/herosplash-p_dxz04n.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* makes the parallax effect */
+        background-attachment: fixed;
+    }
+    #hero-143 .cs-background img {
+        display: none;
+    }
+}
+
+/*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #h-services-143 {
+        /* 40px - 100px */
+        padding: 0 1em clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
+        position: relative;
+        /* give a higher z index than the hero so it can sit on top */
+        z-index: 10;
+    }
+    #h-services-143 .cs-card-group {
+        width: 100%;
+        max-width: 29.0625rem;
+        margin: 0 auto 0;
+        /* negative margin pulls it up on top of the hero section */
+        /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
+            to make the value negative since clamp doesn't work with negative values */
+        margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
+        /* 40px - 60px top and bottom, 16px - 44px left & right */
+        padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
+        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 0.3125rem;
+        border-top: 8px solid var(--primary);
+        background-color: #fff;
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+    }
+    #h-services-143 .cs-item {
+        list-style: none;
+        margin: 0 auto 2rem;
+        width: 100%;
+        max-width: 22.5rem;
+    }
+    #h-services-143 .cs-item:last-of-type {
+        margin-bottom: 0;
+    }
+    #h-services-143 .cs-icon {
+        /* 68px - 88px */
+        width: clamp(4.25rem, 8.8vw, 5.5rem);
+        /* 68px - 88px */
+        height: clamp(4.25rem, 8.8vw, 5.5rem);
+        margin: auto;
+        /* 20px - 24px */
+        margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #h-services-143 .cs-icon img {
+        /* 44px - 52px */
+        width: clamp(2.75rem, 5.8vw, 3.25rem);
+        height: auto;
+    }
+    #h-services-143 .cs-title {
+        font-size: 1.25rem;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto 0.5rem;
+        color: var(--headerColor);
+    }
+    #h-services-143 .cs-text {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5em;
+        max-width: 22.5rem;
+        margin: 0 auto;
+        color: var(--bodyTextColor);
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #h-services-143 .cs-card-group {
+        max-width: 49rem;
+        /* -76px to -320px - we're calculating whatever clamp is and multiplying by -1
+               to make the value negative since clamp doesn't work with negative values */
+        margin-top: calc(clamp(4.75rem, 20vw, 20rem) * -1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2.5rem;
+    }
+    #h-services-143 .cs-item {
+        width: 45%;
+        max-width: 19.625rem;
+    }
+    #h-services-143 .cs-item:last-of-type {
+        margin-bottom: 2rem;
+    }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #h-services-143 .cs-card-group {
+        max-width: 80rem;
+        flex-wrap: nowrap;
+    }
+    #h-services-143 .cs-item {
+        margin: 0;
+    }
+    #h-services-143 .cs-item:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+                                
+</style>
+
+
+
+
+<!-- ============================================ -->
+<!--                   Steps                      -->
+<!-- ============================================ -->
+
+<section id="steps-1675">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Steps</span>
+            <h2 class="cs-title">How To Get Started</h2>
+            <p class="cs-text">
+                Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and semi-permanent coverage.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-number">01</span>
+                <h3 class="cs-h3">Consultation</h3>
+                <p class="cs-item-text">
+                    We don't just build websites, we engineer digital solutions. This begins with our meticulous Discovery Phase. A critical, in-depth collaboration designed to thoroughly understand your business, its complexities, and its unique position
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">02</span>
+                <h3 class="cs-h3">Planning</h3>
+                <p class="cs-item-text">
+                    Our planning phase transforms vision into a meticulously engineered digital roadmap. This is where we outline your entire web design and development project, establish concrete milestones, and set clear, actionable priorities. Our strategic plan ensures your new website design not only aligns perfectly with your long-term vision but also actively supports your specific digital marketing and complex business objective
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">03</span>
+                <h3 class="cs-h3">Execution</h3>
+                <p class="cs-item-text">
+                  Our execution phase brings your vision to life, transforming strategic concepts into a tangible, high-performing digital asset. This is where our expert web design and development teams work in synergy, carefully crafting visual concepts and refining digital assets to not only meet your technology requirements but also align seamlessly with your marketing goals.  
+                </p>
+            </li>
+            <li class="cs-item">
+                <span class="cs-number">04</span>
+                <h3 class="cs-h3">Delivery</h3>
+                <p class="cs-item-text">
+                   The delivery phase marks the culmination of our meticulous planning and expert execution. This is where your new, high-performance website transitions from development to deployment, ready to make a significant impact on your target audience. 
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<style>/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-1675 {
+    padding: var(--sectionPadding);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #steps-1675 .cs-container {
+    width: 100%;
+    /* changes to 1920px at tablet */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-1675 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #steps-1675 .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    max-width: 32.625rem;
+  }
+  #steps-1675 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-items: center;
+    align-items: stretch;
+    grid-auto-flow: row;
+  }
+  #steps-1675 .cs-item {
+    list-style: none;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    /* bottom border */
+  }
+  #steps-1675 .cs-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    /* to change the color of the bottom border, adjust the second color (at 50%). the first and third will blend the color to transparent */
+    /* note you'll also have to change the color in the tablet media query when the lines go vertical */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: .6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  #steps-1675 .cs-item:first-of-type {
+    padding-top: 0;
+  }
+  #steps-1675 .cs-item:last-of-type {
+    padding-bottom: 0;
+  }
+  #steps-1675 .cs-item:last-of-type::after {
+    content: none;
+  }
+  #steps-1675 .cs-number {
+    /* 80px - 100px */
+    font-size: clamp(5rem, 1vw, 6.25rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--primary);
+    opacity: 0.12;
+    display: block;
+  }
+  #steps-1675 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: -1.9375rem 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #steps-1675 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-1675 .cs-container {
+    max-width: 120rem;
+  }
+  #steps-1675 .cs-card-group {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  #steps-1675 .cs-item {
+    /* 24px - 60px */
+    padding: clamp(1.5rem, 3vw, 3.75rem);
+    /* the specificity of the mobile .cs-item means we need to explicitly define the first and last items here, too */
+  }
+  #steps-1675 .cs-item::after {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: .6;
+    right: 0;
+    left: initial;
+  }
+  #steps-1675 .cs-item:first-of-type,
+  #steps-1675 .cs-item:last-of-type {
+    /* 24px - 60px */
+    padding: clamp(1.5rem, 3vw, 3.75rem);
+  }
+}
+                                </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+<Footer />
+</body>
