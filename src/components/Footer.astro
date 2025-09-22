@@ -292,7 +292,55 @@
     }
 }
 
-                                
+/* Mobile only: center footer and hide second Services tab */
+@media only screen and (max-width: 47.99rem) {
+    #cs-footer-272 .cs-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0;
+        text-align: center;
+    }
+    #cs-footer-272 .cs-logo-group,
+    #cs-footer-272 .cs-text,
+    #cs-footer-272 .cs-nav {
+        text-align: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #cs-footer-272 .cs-nav:nth-of-type(2) {
+        display: none;
+    }
+    #cs-footer-272 .cs-logo-group {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Ensures logo and text are centered */
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #cs-footer-272 .cs-logo {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #cs-footer-272 .cs-header {
+        text-align: center;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100%;
+    }
+    #cs-footer-272 .cs-header:after {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        left: 0;
+        right: 0;
+    }
+}
 
 </style>
 
