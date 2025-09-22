@@ -417,9 +417,159 @@ import Footer from "../components/Footer.astro"
         </ul>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-488">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">ONPARDESIGN</span>
+            <h3 class="cs-title">WE MAKE YOUR IDEAS COME TO LIFE</h3>
+            <a href="" class="cs-link">Get In Touch</a>
+        </div>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758340730/pexels-divinetechygirl-1181263_1_xrjcld.webp">
+        <source media="(min-width: 601px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758340730/pexels-divinetechygirl-1181263_1_xrjcld.webp">
+        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758340730/pexels-divinetechygirl-1181263_1_xrjcld.webp" alt="meeting" width="1920" height="543" aria-hidden="true">
+    </picture>
+</section>
+                                
+<style>
+ /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-488 {
+    padding: 0 1rem;
+    position: relative;
+  }
+  #cta-488 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  #cta-488 .cs-content {
+    /* 252px - 284px, changes clamp at tablet */
+    width: clamp(15.75rem, 38vw, 17.75rem);
+    /* 20px - 88px left & right */
+    padding: 0 clamp(1.25rem, 6.5vw, 5.5rem);
+    /* 232px - 335px */
+    padding-top: clamp(14.5rem, 26.7vw, 20.9375rem);
+    /* 36px - 72px */
+    padding-bottom: clamp(2.25rem, 5vw, 4.5rem);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background: rgba(0, 31, 63, 0.7);
+  }
+  #cta-488 .cs-topper {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColorWhite);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    position: relative;
+  }
+  #cta-488 .cs-topper:before {
+    content: "";
+    /* 24px - 40px */
+    width: clamp(1.5rem, 4vw, 2.5rem);
+    height: 2px;
+    background: var(--primary);
+    opacity: 1;
+    position: relative;
+    display: block;
+  }
+  #cta-488 .cs-title {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 50;
+    width: 100%;
+    /* 20 characters wide including space */
+    max-width: 20ch;
+    margin: 0 0 1.25rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-488 .cs-link {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: var(--primary);
+    display: inline-block;
+    position: relative;
+  }
+  #cta-488 .cs-link:hover:before {
+    width: 100%;
+  }
+  #cta-488 .cs-link:before {
+    content: "";
+    width: 0%;
+    height: 0.1875rem;
+    background: currentColor;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.1875rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+  #cta-488 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-488 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cta-488 .cs-container {
+    justify-content: flex-end;
+  }
+  #cta-488 .cs-content {
+    /* 284px - 522px */
+    width: clamp(17.75rem, 40vw, 32.625rem);
+    /* 60px - 108px */
+    margin-right: clamp(3.75rem, 8vw, 6.75rem);
+  }
+}
+                                   
+</style>
+
                                 
 
-<style>/*-- -------------------------- -->
+<style>
+/*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
 
