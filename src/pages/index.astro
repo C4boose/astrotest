@@ -276,16 +276,17 @@ import Footer from "../components/Footer.astro"
     #h-services-143 .cs-card-group {
         width: 100%;
         max-width: 29.0625rem;
-        margin: 0 auto 0;
+        margin: -50.875rem auto -2.075rem;
         /* negative margin pulls it up on top of the hero section */
         /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
             to make the value negative since clamp doesn't work with negative values */
         margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
         /* 40px - 60px top and bottom, 16px - 44px left & right */
         padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
-        box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 20px 40px 0px rgba(87, 0, 0, 0.05);
         border-radius: 0.3125rem;
         border-top: 8px solid var(--primary);
+       /* border-bottom: 8px solid var(--primary); */
         background-color: #fff;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
@@ -368,6 +369,12 @@ import Footer from "../components/Footer.astro"
     #h-services-143 .cs-item:last-of-type {
         margin-bottom: 0;
     }
+}
+/* Mobile - 768px */
+@media only screen and (max-width: 47.99rem) {
+  #h-services-143 .cs-card-group {
+    border-bottom: 8px solid var(--primary); /* or your preferred color */
+  }
 }
 </style>
 <!-- ============================================ -->
