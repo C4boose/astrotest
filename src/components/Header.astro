@@ -5,9 +5,10 @@
 <header id="cs-navigation">
     <div class="cs-container">
         <!--Nav Logo-->
+        <!--https://res.cloudinary.com/dob3ivf6b/image/upload/v1746155219/onpardesign-high-resolution-logo-grayscale-transparent_kfaacw.webp -->
         <!--Logo is turned white in the css with a filter on dark mode-->
         <a href="/" class="cs-logo" aria-label="back to home">
-            <img src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1746155219/onpardesign-high-resolution-logo-grayscale-transparent_kfaacw.webp" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <img src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758761333/logo2_1_wyp7cj.webp" alt="logo" width="50" height="29" aria-hidden="true" decoding="async">
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">
@@ -221,7 +222,7 @@
   #cs-navigation .cs-logo {
     width: auto;
     max-width: 12.5rem;
-    height: 100%;
+    height: 200%;
     margin: 0 auto 0 0;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -645,10 +646,10 @@
   }
   #cs-navigation .cs-logo {
     width: 18.4%;
-    max-width: 21.875rem;
-    height: 2rem;
+    max-width: rem;   /* Increase max-width */
+    height: 3rem;       /* Increase height */
     /* margin-right auto pushes everything away from it to the right */
-    margin: 0 auto 0 0;
+    margin: -100 auto 0 0;
     padding: 0;
     display: flex;
     justify-content: flex-start;
@@ -658,6 +659,7 @@
   #cs-navigation .cs-logo img {
     width: auto;
     height: 100%;
+    max-height: 5rem;   /* Ensure image fills the container */
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
@@ -817,6 +819,33 @@
 @media only screen and (min-width: 81.25rem) {
   #cs-navigation .cs-social {
     display: flex;
+  }
+}
+
+/* Desktop - 1024px and up */
+@media only screen and (min-width: 64rem) {
+  #cs-navigation .cs-logo {
+    max-width: 18rem;
+    height: 5rem;
+    flex-shrink: 0;
+    margin: -1rem auto 0 0; /* Move logo up a bit */
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+}
+
+/* Mobile - 1023px */
+@media only screen and (max-width: 63.9375rem) {
+  #cs-navigation .cs-logo {
+    max-width: 10rem;   /* Increase for mobile as well */
+    height: 2.5rem;
+  }
+  #cs-navigation .cs-logo img {
+    width: auto;
+    height: 100%;
+    max-height: 2.5rem;
+    object-fit: contain;
   }
 }
                                 
