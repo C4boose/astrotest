@@ -49,7 +49,7 @@ import Footer from "../components/Footer.astro"
             </picture>
             <h2 class="cs-title">SEO</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                We Optimize your site so Goole ranks it higher in search results. Helping you and your business grow.
             </p>
         </li>
         <li class="cs-item">
@@ -58,7 +58,7 @@ import Footer from "../components/Footer.astro"
             </picture>
             <h2 class="cs-title">Support</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Our experienced support team is here to help you with any issues or questions you may have.
             </p>
         </li>
         <li class="cs-item">
@@ -67,7 +67,7 @@ import Footer from "../components/Footer.astro"
             </picture>
             <h2 class="cs-title">Site Maintenance</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Once your site is live, we  help you maintain it with regular updates, backups, and security checks.
             </p>
         </li>
     </ul>
@@ -286,7 +286,7 @@ import Footer from "../components/Footer.astro"
         box-shadow: 0px 20px 40px 0px rgba(87, 0, 0, 0.05);
         border-radius: 0.3125rem;
         border-top: 8px solid var(--primary);
-       /* border-bottom: 8px solid var(--primary); */
+        border-bottom: 8px solid var(--primary); 
         background-color: #fff;
         /* prevents padding and border from affecting height and width */
         box-sizing: border-box;
@@ -378,409 +378,66 @@ import Footer from "../components/Footer.astro"
 }
 </style>
 <!-- ============================================ -->
-<!--               Call To Action                 -->
-<!-- ============================================ -->
-
-<section id="cta-2353">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Offering an array of services in the fields of architecture and interior design.</h2>
-            <div class="cs-button-box">
-                <a  class="cs-link">
-                    <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/mail-brown.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-desc">Email Us Anytime</span>
-                        <span  class="cs-contact">support@onpardesign.com</span>
-                    </div>
-                </a>
-                <!-- <a href="" class="cs-link">
-                    <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/mail-brown.svg" alt="icon" width="24" height="24">
-                    </picture>
-                    <div class="cs-info">
-                        <span class="cs-desc">Call Us Anytime</span>
-                        <span class="cs-contact">Call us at +1 (888) 456 789</span>
-                    </div>
-                </a> -->
-            </div>
-            <a href="" class="cs-button-solid">Get A Free Quote</a>
-        </div>
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758594549/unrecognizable-male-female-colleagues-looking-laptop-screen-office-min_faz79g.webp">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758594549/unrecognizable-male-female-colleagues-looking-laptop-screen-office-min_faz79g.webp">
-            <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758594549/unrecognizable-male-female-colleagues-looking-laptop-screen-office-min_faz79g.webp" alt="interior room" width="1280" height="568">
-        </picture>
-    </div>
-</section>
-                                
-
-<style>
-    /*-- -------------------------- -->
-<---      Call To Action        -->
-<--- -------------------------- -*/
-
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-  #cta-2353 {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  #cta-2353 .cs-container {
-    width: 100%;
-    max-width: 112.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    z-index: 1;
-  }
-  #cta-2353 .cs-content {
-    width: 100%;
-    max-width: 52.125rem;
-    padding: var(--sectionPadding);
-  }
-  #cta-2353 .cs-title {
-    max-width: 100%;
-    margin-bottom: 1.5rem;
-  }
-  #cta-2353 .cs-button-box {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 1.5rem;
-    row-gap: 1rem;
-  }
-  #cta-2353 .cs-link {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    /* 12px - 24px */
-    gap: clamp(0.75rem, 1.5vw, 1.5rem);
-  }
-  #cta-2353 .cs-icon-wrapper {
-    /* 48px - 60px */
-    width: clamp(3rem, 5vw, 3.75rem);
-    height: clamp(3rem, 5vw, 3.75rem);
-    border: 1px solid var(--primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #cta-2353 .cs-icon {
-    width: 1.5rem;
-    height: auto;
-    display: block;
-  }
-  #cta-2353 .cs-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-  #cta-2353 .cs-desc {
-    font-size: 1rem;
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #cta-2353 .cs-contact {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 700;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #cta-2353 .cs-button-solid {
-    font-size: 1rem;
-    text-decoration: none;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 3vw, 3.5rem);
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    padding: 0 3rem;
-    background-color: var(--primary);
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #cta-2353 .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #cta-2353 .cs-button-solid:before {
-    content: '';
-    width: 0%;
-    height: 100%;
-    background: #1a1a1a;
-    opacity: 1;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #cta-2353 .cs-picture {
-    width: 100%;
-    height: 31.875rem;
-    display: block;
-    position: relative;
-    z-index: 1;
-    order: -1;
-  }
-  #cta-2353 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #cta-2353 {
-    padding: var(--sectionPadding);
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  #cta-2353 .cs-container {
-    padding: var(--sectionPadding);
-    padding-left: 0;
-    padding-right: 0;
-    align-items: flex-start;
-  }
-  #cta-2353 .cs-content {
-    width: 47.5%;
-    padding: 0;
-  }
-  #cta-2353 .cs-picture {
-    width: 50vw;
-    height: 100%;
-    /* 40px - 60px */
-    margin-left: clamp(2.5rem, 5vw, 3.75rem);
-    position: absolute;
-    top: 0;
-    left: 50%;
-  }
-}
-                                
-    </style>
-                                
-
-<!-- ============================================ -->
-<!--                   Steps                      -->
-<!-- ============================================ -->
-
-<section id="steps-1675">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Our Steps</span>
-            <h2 class="cs-title">How To Get Started</h2>
-            <p class="cs-text">
-                Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and semi-permanent coverage.
-            </p>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <span class="cs-number">01</span>
-                <h3 class="cs-h3">Consultation</h3>
-                <p class="cs-item-text">
-                    We don't just build websites, we engineer digital solutions. This begins with our meticulous Discovery Phase. A critical, in-depth collaboration designed to thoroughly understand your business, its complexities, and its unique position
-                </p>
-            </li>
-            <li class="cs-item">
-                <span class="cs-number">02</span>
-                <h3 class="cs-h3">Planning</h3>
-                <p class="cs-item-text">
-                    Our planning phase transforms vision into a meticulously engineered digital roadmap. This is where we outline your entire web design and development project, establish concrete milestones, and set clear, actionable priorities. Our strategic plan ensures your new website design not only aligns perfectly with your long-term vision but also actively supports your specific digital marketing and complex business objective
-                </p>
-            </li>
-            <li class="cs-item">
-                <span class="cs-number">03</span>
-                <h3 class="cs-h3">Execution</h3>
-                <p class="cs-item-text">
-                  Our execution phase brings your vision to life, transforming strategic concepts into a tangible, high-performing digital asset. This is where our expert web design and development teams work in synergy, carefully crafting visual concepts and refining digital assets to not only meet your technology requirements but also align seamlessly with your marketing goals.  
-                </p>
-            </li>
-            <li class="cs-item">
-                <span class="cs-number">04</span>
-                <h3 class="cs-h3">Delivery</h3>
-                <p class="cs-item-text">
-                   The delivery phase marks the culmination of our meticulous planning and expert execution. This is where your new, high-performance website transitions from development to deployment, ready to make a significant impact on your target audience. 
-                </p>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<!-- ============================================ -->
 <!--                    CTA                       -->
 <!-- ============================================ -->
 
-<section id="cta-488">
+<section id="cta-403">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">ONPARDESIGN</span>
-            <h3 class="cs-title">WE MAKE YOUR IDEAS COME TO LIFE</h3>
-            <a href="" class="cs-button-solid">Request Info</a>
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">Want to Work with Our Team?</h2>
+            <p class="cs-text">
+                We love what we do and we do it with passion. We value the experimentation of the message and smart incentives.
+            </p>
+            <a href="" class="cs-button-solid">Read More</a>
         </div>
     </div>
+    <!--Background Image-->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758340730/pexels-divinetechygirl-1181263_1_xrjcld.webp">
-        <source media="(min-width: 601px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758340730/pexels-divinetechygirl-1181263_1_xrjcld.webp">
-        <img loading="lazy" decoding="async" src="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758340730/pexels-divinetechygirl-1181263_1_xrjcld.webp" alt="meeting" width="1920" height="543" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758594549/unrecognizable-male-female-colleagues-looking-laptop-screen-office-min_faz79g.webp">
+        <source media="(min-width: 601px)" srcset="https://res.cloudinary.com/dob3ivf6b/image/upload/v1758594549/unrecognizable-male-female-colleagues-looking-laptop-screen-office-min_faz79g.webp">
+        <img loading="lazy" decoding="async" src="hhttps://res.cloudinary.com/dob3ivf6b/image/upload/v1758594549/unrecognizable-male-female-colleagues-looking-laptop-screen-office-min_faz79g.webp" alt="cleaner" width="1920" height="660" aria-hidden="true">
     </picture>
 </section>
                                 
+                                
+                                
 <style>
- /*-- -------------------------- -->
+
+/*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cta-488 {
-    padding: 0 1rem;
+  #cta-403 {
+    padding: var(--sectionPadding);
     position: relative;
   }
-  #cta-488 .cs-container {
+  #cta-403 .cs-background {
     width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-  #cta-488 .cs-content {
-    /* 252px - 284px, changes clamp at tablet */
-    width: clamp(15.75rem, 38vw, 17.75rem);
-    /* 20px - 88px left & right */
-    padding: 0 clamp(1.25rem, 6.5vw, 5.5rem);
-    /* 232px - 335px */
-    padding-top: clamp(14.5rem, 26.7vw, 20.9375rem);
-    /* 36px - 72px */
-    padding-bottom: clamp(2.25rem, 5vw, 4.5rem);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    background: rgba(0, 31, 63, 0.7);
-  }
-  #cta-488 .cs-topper {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    color: var(--bodyTextColorWhite);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 1.25rem;
-    position: relative;
-  }
-  #cta-488 .cs-topper:before {
-    content: "";
-    /* 24px - 40px */
-    width: clamp(1.5rem, 4vw, 2.5rem);
-    height: 2px;
-    background: var(--primary);
-    opacity: 1;
-    position: relative;
+    height: 100%;
+    background-blend-mode: multiply;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
-  #cta-488 .cs-button-solid {
-    font-size: 1rem;
-     /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    margin: auto;
-    color: #1a1a1a;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
+  #cta-403 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
     z-index: 1;
-    transition: color 0.3s;
-}
-  #cta-488 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
-}
-  #cta-488 .cs-button-solid:hover {
-    color: #fff;
- }
-  #cta-488 .cs-button-solid:hover:before {
-    width: 100%;
- }
-  #cta-488 .cs-title {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: 50;
-    width: 100%;
-    /* 20 characters wide including space */
-    max-width: 20ch;
-    margin: 0 0 1.25rem;
-    color: var(--bodyTextColorWhite);
   }
-  #cta-488 .cs-link {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin: 0;
-    color: var(--primary);
-    display: inline-block;
-    position: relative;
-  }
-  #cta-488 .cs-link:hover:before {
-    width: 100%;
-  }
-  #cta-488 .cs-link:before {
-    content: "";
-    width: 0%;
-    height: 0.1875rem;
-    background: currentColor;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: -0.1875rem;
-    left: 0;
-    transition: width 0.3s;
-  }
-  #cta-488 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #cta-488 .cs-background img {
+  #cta-403 .cs-background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -788,20 +445,123 @@ import Footer from "../components/Footer.astro"
     width: 100%;
     /* Makes img tag act as a background image */
     object-fit: cover;
+    /* positions the image inside the parent */
+    object-position: 0% 30%;
+  }
+  #cta-403 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-403 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 32.3125rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #cta-403 .cs-title,
+  #cta-403 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #cta-403 .cs-text {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+  #cta-403 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #cta-403 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #000;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #cta-403 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #fff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #cta-403 .cs-button-solid:hover:before {
+    width: 100%;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #cta-488 .cs-container {
-    justify-content: flex-end;
+  #cta-403 .cs-background {
+    /* clips the black slant so it doesnt overflow */
+    overflow: hidden;
   }
-  #cta-488 .cs-content {
-    /* 284px - 522px */
-    width: clamp(17.75rem, 40vw, 32.625rem);
-    /* 60px - 108px */
-    margin-right: clamp(3.75rem, 8vw, 6.75rem);
+  #cta-403 .cs-background:before {
+    width: 40%;
+    opacity: 1;
+  }
+  #cta-403 .cs-background:after {
+    /* black slant */
+    content: "";
+    width: 31.25rem;
+    height: 93.75rem;
+    margin-right: -3.125rem;
+    background: -moz-linear-gradient(left, #1a1a1a 0%, #1a1a1a 57%, rgba(26, 26, 26, 0) 100%);
+    background: -webkit-linear-gradient(left, #1a1a1a 0%, #1a1a1a 57%, rgba(26, 26, 26, 0) 100%);
+    background: linear-gradient(to right, #1a1a1a 0%, #1a1a1a 57%, rgba(26, 26, 26, 0) 100%);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 50%;
+    transform: rotate(10deg) translateY(-50%);
+  }
+  #cta-403 .cs-background img {
+    width: 60%;
+    object-position: right;
+    left: auto;
+    right: 0;
+  }
+  #cta-403 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cta-403 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+    width: 45%;
+  }
+  #cta-403 .cs-text,
+  #cta-403 .cs-title {
+    margin-left: 0;
   }
 }
+                                
                                    
 </style>
 
